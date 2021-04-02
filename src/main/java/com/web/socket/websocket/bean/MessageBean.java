@@ -1,8 +1,13 @@
 package com.web.socket.websocket.bean;
 
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class MessageBean {
+    @JsonProperty("name")
     private String name;
+
+    @JsonProperty("message")
     private String message;
 
     public String getName() {
